@@ -4,6 +4,7 @@ import Header from './components/Header'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer';
+import Portfolio from './components/Portfolio';
 
 function App() {
   const [currentTab, setTab] = useState('about');
@@ -12,8 +13,8 @@ function App() {
     switch (currentTab) {
       case 'about':
         return <About />;
-      // case 'portfolio':
-      //   return <Portfolio />;
+      case 'portfolio':
+        return <Portfolio />;
       case 'contact':
         return <Contact />
       // case 'resume':
